@@ -3,7 +3,7 @@ version: '3'
 services:
 
   dev:
-    image: flink:1.17.0
+    image: flink:1.18.1
     environment:
       FLINK_PROPERTIES: "jobmanager.rpc.address: localhost"
     command: "taskmanager --cap-add=SYS_PTRACE --security-opt seccomp=unconfined"
@@ -14,7 +14,7 @@ services:
       - checkpoints:/tmp/flink-checkpoints-directory
 
   jobmanager:
-    image: flink:1.17.0
+    image: flink:1.18.1
     environment:
       FLINK_PROPERTIES: "jobmanager.rpc.address: localhost"
     command: jobmanager

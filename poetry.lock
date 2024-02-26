@@ -77,28 +77,28 @@ test = ["cryptography (>=36.0.0)", "freezegun (>=0.3.12)", "hypothesis (>5.0.0,<
 
 [[package]]
 name = "apache-flink"
-version = "1.17.2"
+version = "1.18.1"
 description = "Apache Flink Python API"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "apache-flink-1.17.2.tar.gz", hash = "sha256:5141a053f227686fba3e9556273d999b35ce3b80d938b9bf0119a1f56b5536ca"},
-    {file = "apache_flink-1.17.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:96883df22b93ad58abbeb5d48d050637108eacf9861fa0824f5a50c54d2691cc"},
-    {file = "apache_flink-1.17.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:469490fae7567d8fe9bbe8a8721e6188d274ef7bfcf9806aea6c390e9d707ef2"},
-    {file = "apache_flink-1.17.2-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:16424ee3066b75facb860057c7b3d24b17a74a0c32c4042f3bb75ff7c3137cc9"},
-    {file = "apache_flink-1.17.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:0805404deafbf5549b9b3d80b0a7e7ea95a2dc2196da755207b12b18cf912ac1"},
-    {file = "apache_flink-1.17.2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:d62ce310a68e6d6ba0061181f6d352c1228c0dfd74d215b57a9adf2d2526fe4d"},
-    {file = "apache_flink-1.17.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:9fef6d0039e2a466077eeee0be3e48554f3a172f78f62078f3bbd1cd898d2e0c"},
-    {file = "apache_flink-1.17.2-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:d5d1ca72a7eddb4d984b873d56b9125f6db9be6ba704a02c7683f58b64108ffd"},
-    {file = "apache_flink-1.17.2-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:edce18695eb9920984575e99a82b9574e1258cc82704de3518d0f3935f6020fe"},
-    {file = "apache_flink-1.17.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:3f86f8af170f0e8a4e7396f2d7cfb00956b081fd0d0a6470d998daaac021d74b"},
-    {file = "apache_flink-1.17.2-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:420d4df29c42480b9d4c487be72fe35a225a38a2f16b5a82c7d8d810f1ede072"},
-    {file = "apache_flink-1.17.2-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:2ab9c710b9094c86448610a5656988177388bc63baef90a817924bfd4247c2f0"},
+    {file = "apache-flink-1.18.1.tar.gz", hash = "sha256:5c9457234fe22e828e1b8faf0d1b0b94c05faee4593972eb73459018a94472c8"},
+    {file = "apache_flink-1.18.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:e74e89b9e9d0c1cf59f2b1456650da4f14659913e938477c62a1b88245100330"},
+    {file = "apache_flink-1.18.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:a8d52c9c3e24829ca4235171857c94cea10fdeaf6896fe66b8b12d3e858b8aeb"},
+    {file = "apache_flink-1.18.1-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:f93cbc4d88e39135dd59d7d7cc2e2252dec4017c4943dd8ab62e117e953a2d15"},
+    {file = "apache_flink-1.18.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:6ca2887e7aa6b2fb88c8caf08b994cbdf7bd80bfae43734f539f5962f9c7c488"},
+    {file = "apache_flink-1.18.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:0746d0742105bb3b1f7fce01c63b7071f66b0711a777814c99461debaa3015bd"},
+    {file = "apache_flink-1.18.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:0fd51ce47abaf56c12df9f0cda36d823fb6c9998672f81c0e582a3b58453a7c9"},
+    {file = "apache_flink-1.18.1-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:e763006f57b2eda4e0b3b657462796f5f514ef3de5556c7b7905021a2401feaa"},
+    {file = "apache_flink-1.18.1-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:dec50f88ec55e6255746ac940c1a0cd55d7baf689c24d6b174146d072c9e82b6"},
+    {file = "apache_flink-1.18.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:21d07d8cf78615d0bfcf4bebd1d1eebc8280b11d0cebe6c403bf0ed76114b9a2"},
+    {file = "apache_flink-1.18.1-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:ecce586aac697f52c7555b1d56c1afd00d460a29b5c69b0de6239798d67271ec"},
+    {file = "apache_flink-1.18.1-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:68c83b80dce53811826c32350c9e534f53dbf62f5e113937dd5bb101e1ab76fb"},
 ]
 
 [package.dependencies]
 apache-beam = ">=2.43.0,<2.49.0"
-apache-flink-libraries = ">=1.17.2,<1.17.3"
+apache-flink-libraries = ">=1.18.1,<1.18.2"
 avro-python3 = ">=1.8.1,<1.9.2 || >1.9.2"
 cloudpickle = ">=2.2.0"
 fastavro = ">=1.1.0,<1.8.0 || >1.8.0"
@@ -115,12 +115,12 @@ requests = ">=2.26.0"
 
 [[package]]
 name = "apache-flink-libraries"
-version = "1.17.2"
+version = "1.18.1"
 description = "Apache Flink Libraries"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "apache-flink-libraries-1.17.2.tar.gz", hash = "sha256:1d7f7de6d3288610d0fecb7b45235343e31d644d0eacbe5e560560ed9124dcdb"},
+    {file = "apache-flink-libraries-1.18.1.tar.gz", hash = "sha256:369ce11ab33e5e15cdd349db2f5412dcc2fad163b6a87aa93b927a3631bcca7f"},
 ]
 
 [[package]]
@@ -1374,4 +1374,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.10"
-content-hash = "b5ec9fdcc2900932aded99d6b89453632512f96bf81fb24094040ef9dc6e8e63"
+content-hash = "22187503f89f23af8843d194e7776f7e6de2b2e6cc8b86b19196e4fc6aecf590"

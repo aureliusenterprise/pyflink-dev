@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "~3.10"
-apache-flink = "~1.17"
+apache-flink = "1.18.1"
 
 [tool.poetry.dev-dependencies]
 debugpy = "~1.8"

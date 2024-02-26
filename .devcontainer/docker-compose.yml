@@ -13,7 +13,7 @@ services:
       - ..:/workspace:cached
       - checkpoints:/tmp/flink-checkpoints-directory
 
-  pyflink-jobmanager:
+  jobmanager:
     image: flink:1.17.0
     environment:
       FLINK_PROPERTIES: "jobmanager.rpc.address: localhost"

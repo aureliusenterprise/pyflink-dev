@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+  dev:
+    image: flink:1.17.0
+    environment:
+      FLINK_PROPERTIES: "jobmanager.rpc.address: localhost"
+    command: "taskmanager --cap-add=SYS_PTRACE --security-opt seccomp=unconfined"
+    cap_add:
+      - SYS_PTRACE
+    volumes:
+      - ..:/workspace:cached
+      - checkpoints:/tmp/flink-checkpoints-directory
+
+  pyflink-jobmanager:
+    image: flink:1.17.0
+    environment:
+      FLINK_PROPERTIES: "jobmanager.rpc.address: localhost"
+    command: jobmanager
+    volumes:
+      - checkpoints:/tmp/flink-checkpoints-directory
+    network_mode: service:dev
+    restart: unless-stopped
+
+volumes:
+  checkpoints:

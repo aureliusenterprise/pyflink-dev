@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyflink-dev"
+version = "0.1.0"
+description = "A template for developing Apache Flink applications in Python"
+authors = ["Aurelius Enterprise <info@aureliusenterprise.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+apache-flink = "~1.17"
+
+[tool.poetry.dev-dependencies]
+debugpy = "~1.8"
+pytest = "~8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

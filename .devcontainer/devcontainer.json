@@ -1,0 +1,54 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+    "name": "PyFlink Development Container",
+    // The 'service' property is the name of the service for the container that VS Code should
+    // use. Update this value and .devcontainer/docker-compose.yml to the real service name.
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "dev",
+    // The 'workspaceFolder' property is the path VS Code should open by default when
+    // connected. Corresponds to a volume mount in .devcontainer/docker-compose.yml
+    "workspaceFolder": "/workspace",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/python:1": {},
+        "ghcr.io/devcontainers-contrib/features/poetry:2": {},
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+            "packages": "gdb"
+        },
+        "ghcr.io/paul-gilber/devcontainer-features/yamllint-homebrew:1": {}
+    },
+    // Lifecycle scripts.
+    "postCreateCommand": "bash .devcontainer/postcreate.sh",
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "${containerWorkspaceFolder}/.venv/bin/python"
+            },
+            "extensions": [
+                "ms-python.debugpy"
+            ]
+        }
+    },
+    // Environment variables to set in the development environment.
+    "containerEnv": {
+        "POETRY_VIRTUALENVS_IN_PROJECT": "true"
+    },
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [
+        5678,
+        8081
+    ],
+    "portsAttributes": {
+        "5678": {
+            "label": "debugpy",
+            "onAutoForward": "ignore"
+        },
+        "8081": {
+            "label": "Flink UI"
+        }
+    }
+}

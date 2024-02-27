@@ -5,7 +5,7 @@ from pyflink.datastream import StreamExecutionEnvironment
 
 
 @pytest.fixture(scope='session')
-def environment() -> Generator[StreamExecutionEnvironment]:
+def environment() -> Generator[StreamExecutionEnvironment, None, None]:
     """Create a stream execution environment and close it after tests are completed."""
     env = StreamExecutionEnvironment.get_execution_environment()
     env.set_parallelism(1)

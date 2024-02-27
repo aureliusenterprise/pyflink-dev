@@ -96,4 +96,4 @@ After running the command, note the process ID (e.g., `1234`) from the output. N
 
 ### Unit Testing
 
-The development environment supports unit testing for Flink jobs, leveraging the local execution capabilities for comprehensive testing. An example unit test for the word count functionality is provided in `examples/test__word_count.py`. To run the unit tests, simply use the `pytest` command.
+The development environment leverages its local execution capabilities to enable unit testing for Flink jobs. An example unit test for the word count functionality is provided in `examples/test__word_count.py`. To run the unit tests, simply use the `pytest` command.

@@ -57,6 +57,8 @@ def stream(data: list[str]) -> DataStream:
     """Create a Flink Stream that aggregates a stream of words and counts the occurrences of each word."""
     env = StreamExecutionEnvironment.get_execution_environment()
 
+    env.set_parallelism(1)
+
     data_source = env.from_collection(data)
 
     return (

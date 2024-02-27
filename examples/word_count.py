@@ -7,7 +7,6 @@ if __name__ == "__main__":
 
     env = StreamExecutionEnvironment.get_execution_environment()
 
-    # write all the data to one file
     env.set_parallelism(1)
 
     word_count_data = [

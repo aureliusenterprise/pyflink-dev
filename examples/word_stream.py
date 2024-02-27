@@ -35,6 +35,7 @@ if __name__ == "__main__":
     max_word_id = len(words) - 1
 
     def id_to_word(id: int) -> str:
+        """Look up a word by the given id."""
         return words[id]
 
     env = StreamExecutionEnvironment.get_execution_environment()

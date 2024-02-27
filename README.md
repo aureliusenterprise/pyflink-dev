@@ -19,6 +19,8 @@ To start using this development environment, follow the getting started guide fo
 
 > **Prerequisite**: Please ensure [Docker](https://www.docker.com/) is installed and running on your machine.
 
+If you prefer not to install and configure Docker locally, GitHub Codespaces offers a convenient alternative. It allows you to create a fully configured development environment in the cloud. Please refer to the [GitHub Codespaces documentation](https://docs.github.com/en/codespaces) to get started.
+
 ## Workflow
 
 This development environment optimizes Apache Flink's Python API development using Docker Compose for a minimal local Flink Cluster, featuring a Job Manager and a Task Manager. Using the [devcontainers](https://containers.dev/) standard, it simplifies the deployment of code changes and enables convenient debugging.

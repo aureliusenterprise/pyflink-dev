@@ -84,7 +84,7 @@ To debug a running Flink job running on the job manager, use the following comma
 flink-debug <optional_task_id>
 ```
 
-> **Note**: Without arguments, flink-debug targets `1-1`. Specify a different task ID if needed.
+> **Note**: Without arguments, `flink-debug` targets `1-1`. Specify a different task ID if needed.
 
 After running the command, note the process ID (e.g., `1234`) from the output. Next, attach your debugger to the running process. This allows you to set breakpoints and inspect the task's execution in real-time.
 

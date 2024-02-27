@@ -53,13 +53,10 @@ def data() -> list[str]:
 
 
 @pytest.fixture
-def stream(data: list[str]) -> DataStream:
+def stream(environment: StreamExecutionEnvironment, data: list[str]) -> DataStream:
     """Create a Flink Stream that aggregates a stream of words and counts the occurrences of each word."""
-    env = StreamExecutionEnvironment.get_execution_environment()
 
-    env.set_parallelism(1)
-
-    data_source = env.from_collection(data)
+    data_source = environment.from_collection(data)
 
     return (
         data_source.flat_map(split)

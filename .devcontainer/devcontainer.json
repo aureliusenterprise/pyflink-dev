@@ -26,9 +26,6 @@
     // Configure tool-specific properties.
     "customizations": {
         "vscode": {
-            "settings": {
-                "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python"
-            },
             "extensions": [
                 "ms-python.debugpy"
             ]
@@ -36,7 +33,7 @@
     },
     // Environment variables to set in the development environment.
     "containerEnv": {
-        "POETRY_VIRTUALENVS_IN_PROJECT": "true"
+        "POETRY_VIRTUALENVS_CREATE": "false"
     },
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     "forwardPorts": [

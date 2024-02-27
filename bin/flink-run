@@ -9,4 +9,4 @@ fi
 PY_JOB=$1
 
 # Run the Flink command
-flink run -d -py $PY_JOB -pyexec $PWD/.venv/bin/python
+flink run -d -py $PY_JOB -pyexec python

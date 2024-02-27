@@ -19,9 +19,8 @@ echo "Attempting to attach a debugger to PyFlink process with ID: $SEARCH_ID..."
 if [[ -n $PID ]]; then
     echo "Found PyFlink process with ID $SEARCH_ID. Process PID: $PID."
 
-    if $PWD/.venv/bin/python -m debugpy --listen $PORT --pid $PID; then
-        echo "Successfully attached debugger!"
-        echo "Please connect your VS Code debugger to the process PID: $PID on port $PORT."
+    if python -m debugpy --listen $PORT --pid $PID; then
+        echo "Please connect your debugger to the process PID: $PID"
     else
         echo "Error: Encountered an issue while attaching the debugger to PID $PID."
         echo "Please ensure you have the necessary permissions and the debugpy module is installed in your .venv."

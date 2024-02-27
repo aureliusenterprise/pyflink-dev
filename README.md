@@ -78,9 +78,13 @@ To submit a job to the job manager, use the following command. For instance, to 
 flink-run examples/word_count.py
 ```
 
-### Debugging a Flink Task
+### Debugging a Flink Job
 
-To debug a running Flink job running on the job manager, use the following command:
+Debugging a live Flink job is straightforward with the use of the `flink-debug` command.
+
+#### Initiating Debug Mode
+
+To start debugging, execute the following command in your terminal:
 
 ```bash
 flink-debug <optional_task_id>
@@ -88,13 +92,33 @@ flink-debug <optional_task_id>
 
 > **Note**: Without arguments, `flink-debug` targets `1-1`. Specify a different task ID if needed.
 
-After running the command, note the process ID (e.g., `1234`) from the output. Next, attach your debugger to the running process. This allows you to set breakpoints and inspect the task's execution in real-time.
+Upon successful execution, the command will output a process ID (e.g., `1234`). Make a note of this ID as you will need it to attach your debugger to the correct process.
 
-#### For VS Code Users
+#### Debugging with VS Code
 
-1. Open the debugger tab within VS Code.
-2. Click the green play button to launch the debugger. Ensure you select the debugger profile included with this environment.
-3. VS Code will display a list of running processes. Choose the one that matches your noted process ID.
+If you're using VS Code, follow these steps to attach the debugger:
+
+1. **Open Debugger**: Navigate to the debugger tab in VS Code.
+2. **Start Debugging**: Click the green play button to initiate the debugger. Make sure to select the  debugger profile provided with your development environment.
+3. **Select Process**: VS Code will present a list of running processes. Choose the one that corresponds to the process ID you noted earlier.
+
+#### Practical Example
+
+To put these instructions into practice, consider debugging the `word_stream` example. This job continuously outputs words to standard output. Begin by starting the job with the following command:
+
+```bash
+flink-run examples/word_stream.py
+```
+
+Next, initiate debug mode:
+
+```bash
+flink-debug
+```
+
+Remember to note the process ID displayed in your console.
+
+With the job running, proceed to open the `examples/word_stream.py` file and set a breakpoint at line `39`. This is the body of the function that processes messages as they are received from the data source. Finally, attach your debugger to the noted process. The execution will halt at the breakpoint the moment the next message is processed, enabling you to inspect the flow in real-time.
 
 ### Unit Testing
 

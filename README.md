@@ -26,7 +26,7 @@ This development environment optimizes Apache Flink's Python API development usi
 ```mermaid
 graph LR
 
-    subgraph LocalEnvironment["Local Environiment"]
+    subgraph LocalEnvironment["Local Environment"]
         direction LR
         Editor["Editor"]
 

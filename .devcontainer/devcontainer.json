@@ -15,13 +15,11 @@
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/devcontainers/features/python:1": {
             "version": "3.10",
-            "installTools": false
+            "toolsToInstall": "poetry"
         },
-        "ghcr.io/devcontainers-contrib/features/poetry:2": {},
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
             "packages": "gdb"
-        },
-        "ghcr.io/paul-gilber/devcontainer-features/yamllint-homebrew:1": {}
+        }
     },
     // Lifecycle scripts.
     "postCreateCommand": "bash .devcontainer/postcreate.sh",
@@ -29,7 +27,7 @@
     "customizations": {
         "vscode": {
             "settings": {
-                "python.pythonPath": "${containerWorkspaceFolder}/.venv/bin/python"
+                "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python"
             },
             "extensions": [
                 "ms-python.debugpy"

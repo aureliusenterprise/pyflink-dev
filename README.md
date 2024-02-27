@@ -11,7 +11,7 @@ This project provides a template for developing Flink applications using the Pyt
 
 ## Installation
 
-To start using this development environment, follow the getting started guide for your preferred editor:
+To start using this development environment locally, follow the getting started guide for your preferred editor:
 
 - [VS Code](https://code.visualstudio.com/docs/devcontainers/containers)
 - [IntelliJ IDEA](https://www.jetbrains.com/help/idea/connect-to-devcontainer.html)

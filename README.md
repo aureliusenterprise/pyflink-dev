@@ -120,6 +120,8 @@ Remember to note the process ID displayed in your console.
 
 With the job running, proceed to open the `examples/word_stream.py` file and set a breakpoint at line `39`. This is the body of the function that processes messages as they are received from the data source. Finally, attach your debugger to the noted process. The execution will halt at the breakpoint the moment the next message is processed, enabling you to inspect the flow in real-time.
 
+https://github.com/aureliusenterprise/pyflink-dev/assets/37906715/8b9388b2-dc2a-4c41-a156-add31da28dfb
+
 ### Unit Testing
 
 The development environment leverages its local execution capabilities to enable unit testing for Flink jobs. An example unit test for the word count functionality is provided in `examples/test__word_count.py`. To run the unit tests, simply use the `pytest` command.

@@ -72,7 +72,7 @@ To run a flink job locally, simply run it with python:
 python examples/word_count.py
 ```
 
-> **Note**: To debug a locally running job, simply run it in debug mode.
+> **Note**: To debug a locally running job, run the script in debug mode.
 
 ### Deploying a Flink Job
 
@@ -100,13 +100,9 @@ Upon successful execution, the command will output a process ID (e.g., `1234`). 
 
 #### Debugging with VS Code
 
-If you're using VS Code, follow these steps to attach the debugger:
+If you're using VS Code, navigate to the debugger tab. Next, click the green play button to initiate the debugger. Make sure to select the debugger profile provided with your development environment. VS Code will present a list of running processes. Choose the one that corresponds to the process ID you noted earlier. 
 
-1. **Open Debugger**: Navigate to the debugger tab in VS Code.
-2. **Start Debugging**: Click the green play button to initiate the debugger. Make sure to select the  debugger profile provided with your development environment.
-3. **Select Process**: VS Code will present a list of running processes. Choose the one that corresponds to the process ID you noted earlier.
-
-#### Practical Example
+### Practical Example
 
 To put these instructions into practice, consider debugging the `word_stream` example. This job continuously outputs words to standard output. Begin by starting the job with the following command:
 
@@ -114,7 +110,7 @@ To put these instructions into practice, consider debugging the `word_stream` ex
 flink-run examples/word_stream.py
 ```
 
-Next, initiate debug mode:
+Next, initiate the debugger:
 
 ```bash
 flink-debug

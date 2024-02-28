@@ -60,7 +60,7 @@ The setup allows local code execution in the development environment, enabling d
 
 Follow these instructions to execute common development tasks efficiently.
 
-### Acessing the Flink UI
+### Accessing the Flink UI
 
 The Flink UI is available at `http://localhost:8081`.
 

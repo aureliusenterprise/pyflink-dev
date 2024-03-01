@@ -19,6 +19,8 @@ To start using this development environment locally, follow the getting started 
 
 > **Prerequisite**: Please ensure [Docker](https://www.docker.com/) is installed and running on your machine.
 
+https://github.com/aureliusenterprise/pyflink-dev/assets/37906715/99e19704-a47e-4ad4-93a9-13b7bfffad42
+
 If you prefer not to install and configure Docker locally, GitHub Codespaces offers a convenient alternative. It allows you to create a fully configured development environment in the cloud. Please refer to the [GitHub Codespaces documentation](https://docs.github.com/en/codespaces) to get started.
 
 ## Workflow

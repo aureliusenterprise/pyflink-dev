@@ -58,6 +58,16 @@ Interact with the code via your preferred editor, connected to the Remote Develo
 
 The setup allows local code execution in the development environment, enabling debugger use through your editor. This repository provides utilities for connecting the debugger to a running Flink Job, allowing for in-depth inspection of tasks and setting breakpoints directly in the execution flow.
 
+## Structure
+
+The development environment is structured as follows:
+
+| Folder        | Description                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------------- |
+| `bin`         | Contains scripts for common development tasks.                                               |
+| `examples`    | Contains example Flink jobs and unit tests.                                                  |
+| `pyflink_dev` | The Python package where you can add code for your Flink jobs. Rename this for your project. |
+
 ## Usage
 
 Follow these instructions to execute common development tasks efficiently.
@@ -84,9 +94,13 @@ To submit a job to the job manager, use the following command. For instance, to 
 flink-run examples/word_count.py
 ```
 
+> **Note**: The `flink-run` command is automatically registered in the development environment. After initial setup, it may occur that the command is not recognized. In this case, open a new terminal session or restart the development environment.
+
 ### Debugging a Flink Job
 
 Debugging a live Flink job is straightforward with the use of the `flink-debug` command.
+
+> **Note**: The `flink-debug` command is automatically registered in the development environment. After initial setup, it may occur that the command is not recognized. In this case, open a new terminal session or restart the development environment.
 
 #### Initiating Debug Mode
 
